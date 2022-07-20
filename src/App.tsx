@@ -1,7 +1,7 @@
-import React, { useCallback } from 'react'
-import styled from 'styled-components'
-import { Button, Title } from '@gnosis.pm/safe-react-components'
-import { useSafeAppsSDK } from '@gnosis.pm/safe-apps-react-sdk'
+import { useSafeAppsSDK } from '@gnosis.pm/safe-apps-react-sdk';
+import { Button, Title } from '@gnosis.pm/safe-react-components';
+import React, { useCallback } from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 1rem;
@@ -26,7 +26,7 @@ const SafeApp = (): React.ReactElement => {
         txs: [
           {
             to: safe.safeAddress,
-            value: '0',
+            value: '0.01',
             data: '0x',
           },
         ],
